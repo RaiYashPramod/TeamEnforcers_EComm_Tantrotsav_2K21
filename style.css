@@ -1,1 +1,24 @@
-//let design something
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  /* font-family: 'Akaya Kanadaka', cursive; */
+}
+/* Colours used in this site */
+:root{
+  --primary: indianred;
+  --seconday: rbga(15, 10, 29,0.849);
+  --light: #2f3640;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+}
+nav1{
+  width: 100%;
+  height: 80px;
+}
