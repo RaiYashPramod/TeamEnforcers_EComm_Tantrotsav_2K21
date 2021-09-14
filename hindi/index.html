@@ -78,6 +78,45 @@
         </ul>
       </nav>
       <!-- nav 3 ends here -->
+      <section id="sidenav">
+        <ul>
+          <li><a href="#"><i class="fa fa-home"></i>होम</a></li>
+          <li><a href="#"><i class="fa fa-shopping-bag"></i>
+            कपड़े <i class="fa fa-caret-down"></i></a>
+         <ul>
+             <li><a href="#"><i class="fa fa-circle-o"></i>नर</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>महिला</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>लड़के</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>लड़कियाँ</a></li>
+         </ul></li>
+          <li><a href="#"><i class="fa fa-users"></i>
+            सामान <i class="fa fa-caret-down"></i></a>
+         <ul>
+             <li><a href="#"><i class="fa fa-circle-o"></i>लैपटॉप</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>मोबाइल</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>टॅब्लेट</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>बुद्धिमानघड़ी</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>गैजेट</a></li>
+         </ul></li>
+          <li><a href="#"><i class="fa fa-anchor"></i>
+             खिलौने <i class="fa fa-caret-down"></i></a>
+          <ul>
+              <li><a href="#"><i class="fa fa-circle-o"></i>शिशु</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>पांच से ऊपर</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>तेरह से ऊपर</a></li>
+          </ul>
+          </li>
+            <li><a href="#"><i class="fa fa-calendar-check-o"></i>खास पेशकश</a></li>
+            <li><a href="#"><i class="fa fa-calendar-check-o"></i>
+              भाषा  <i class="fa fa-caret-down"></i></a>
+            <ul>
+              <li><a href="../index.html"><i class="fa fa-circle-o"></i>English</a></li>
+              <li><a href="../marathi/index.html"><i class="fa fa-circle-o"></i>मराठी</a></li>
+            </ul>
+            </li>
+        </ul>
+      </section>
+        <i class="fa fa-anchor" id="menubar"></i>
       <section class="firstsection">
         <div class="fstext">
           <button name="comingsoon">जल्द आ रहा है</button>
@@ -251,5 +290,18 @@
      },
    });
   </script>
+  <script>
+     var sidenav = document.getElementById('sidenav');
+     var menubar = document.getElementById('menubar');
+     sidenav.style.width="0px";
+     menubar.onclick = function(){
+       if( sidenav.style.width == "0px"){
+         sidenav.style.width = "250px";
+       }
+       else{
+         sidenav.style.width = "0px";
+       }
+     }
+ </script>
 </body>
 </html>

@@ -77,6 +77,44 @@
         </ul>
       </nav>
       <!-- nav 3 ends here -->
+      <section id="sidenav">
+        <ul>
+          <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+          <li><a href="#"><i class="fa fa-shopping-bag"></i>
+            Clothing <i class="fa fa-caret-down"></i></a>
+         <ul>
+             <li><a href="#"><i class="fa fa-circle-o"></i>Male</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>Female</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>Boys</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>Girls</a></li>
+         </ul></li>
+          <li><a href="#"><i class="fa fa-users"></i>
+            Accessories <i class="fa fa-caret-down"></i></a>
+         <ul>
+             <li><a href="#"><i class="fa fa-circle-o"></i>Laptop</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>Mobile</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>Tablets</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>Smart Watch</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>Gadgets</a></li>
+         </ul>
+         </li>
+          <li><a href="#"><i class="fa fa-anchor"></i>
+             Toys <i class="fa fa-caret-down"></i></a>
+          <ul>
+              <li><a href="#"><i class="fa fa-circle-o"></i>New Born</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>Above 5</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>Above 13</a></li>
+          </ul>
+          </li>
+            <li><a href="#"><i class="fa fa-calendar-check-o"></i>Special Offers</a></li>
+            <li><a href="#"><i class="fa fa-calendar-check-o"></i>Language <i class="fa fa-caret-down"></i></a>
+         <ul>
+             <li><a href="hindi/index.html"><i class="fa fa-circle-o"></i>Hindi</a></li>
+             <li><a href="marathi/index.html"><i class="fa fa-circle-o"></i>Marathi</a></li>
+         </ul></li>
+        </ul>
+      </section>
+      <i class="fa fa-anchor" id="menubar"></i>
       <section class="firstsection">
         <div class="fstext">
           <button name="comingsoon">Coming Soon</button>
@@ -95,7 +133,7 @@
         <div class="">
           <img src="images/shoe1.jpg" alt="">
         </div>
-        <h1>Nike:Satan Edition</h1>
+        <h1>Vans</h1>
         <span>
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -112,7 +150,6 @@
         </div>
         <h1>Running Shoes</h1>
         <span>
-          <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -138,7 +175,6 @@
       </div>
       </div>
 <!-- second row of New Arrivals -->
-
       <div class="card-container">
       <div class="card">
         <div class="">
@@ -146,6 +182,7 @@
         </div>
         <h1>Puma Premium</h1>
         <span>
+          <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -176,6 +213,7 @@
         </div>
         <h1>Adidas Yezzy's</h1>
         <span>
+          <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -231,8 +269,8 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
    var swiper = new Swiper(".mySwiper", {
      effect: "coverflow",
      grabCursor: true,
@@ -249,6 +287,19 @@
        el: ".swiper-pagination",
      },
    });
-  </script>
+ </script>
+ <script>
+    var sidenav = document.getElementById('sidenav');
+    var menubar = document.getElementById('menubar');
+    sidenav.style.width="0px";
+    menubar.onclick = function(){
+      if( sidenav.style.width == "0px"){
+        sidenav.style.width = "250px";
+      }
+      else{
+        sidenav.style.width = "0px";
+      }
+    }
+</script>
 </body>
 </html>

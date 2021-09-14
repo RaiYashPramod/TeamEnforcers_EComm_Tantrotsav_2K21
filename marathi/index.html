@@ -18,7 +18,7 @@
       <nav class="nav1">
         <div class="left">
           <span>आपल्या ई-शॉपमध्ये आपले स्वागत आहे</span>
-          <a href="../login/login.html">लॉगिन करा</a>सदस्य नाही? आमच्यात सामील व्हा<a href="../register/index.html">नोंदणी करा</a>
+          <a href="../login/login.html">लॉगिन करा</a>सदस्य नाही?ा<a href="../register/index.html">नोंदणी करा</a>
         </div>
         <div class="right">
           <input type="text" name="Search"  placeholder="शोधा" >
@@ -76,6 +76,44 @@
         </ul>
       </nav>
       <!-- nav 3 ends here -->
+      <section id="sidenav">
+        <ul>
+          <li><a href="#"><i class="fa fa-home"></i>होम</a></li>
+          <li><a href="#"><i class="fa fa-shopping-bag"></i>
+            कपडे <i class="fa fa-caret-down"></i></a>
+         <ul>
+             <li><a href="#"><i class="fa fa-circle-o"></i>माणूस</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>महिला</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>मुलगा</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>मुलगी</a></li>
+         </ul></li>
+          <li><a href="#"><i class="fa fa-users"></i>
+            अक्सेसरीज <i class="fa fa-caret-down"></i></a>
+         <ul>
+             <li><a href="#"><i class="fa fa-circle-o"></i>लॅपटॉप</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>मोबाईल</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>टॅब्लेट</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>स्मार्ट वॉच</a></li>
+             <li><a href="#"><i class="fa fa-circle-o"></i>गॅझेट</a></li>
+         </ul></li>
+          <li><a href="#"><i class="fa fa-anchor"></i>
+            खेळणी <i class="fa fa-caret-down"></i></a>
+          <ul>
+              <li><a href="#"><i class="fa fa-circle-o"></i>नवीन जन्म</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>पाचच्या वर</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>तेराच्या वर</a></li>
+          </ul>
+          </li>
+            <li><a href="#"><i class="fa fa-calendar-check-o"></i>विशेष ऑफर</a></li>
+            <li><a href="#"><i class="fa fa-calendar-check-o"></i>भिन्न भाषा <i class="fa fa-caret-down"></i></a>
+         <ul>
+             <li><a href="../index.html"><i class="fa fa-circle-o"></i>English</a></li>
+             <li><a href="../hindi/index.html"><i class="fa fa-circle-o"></i>Hindi</a></li>
+         </ul></li>
+        </ul>
+
+      </section>
+      <i class="fa fa-anchor" id="menubar"></i>
       <section class="firstsection">
         <div class="fstext">
           <button name="comingsoon">लवकरच येत आहे</button>
@@ -248,5 +286,18 @@
      },
    });
   </script>
+  <script>
+     var sidenav = document.getElementById('sidenav');
+     var menubar = document.getElementById('menubar');
+     sidenav.style.width="0px";
+     menubar.onclick = function(){
+       if( sidenav.style.width == "0px"){
+         sidenav.style.width = "250px";
+       }
+       else{
+         sidenav.style.width = "0px";
+       }
+     }
+ </script>
 </body>
 </html>
