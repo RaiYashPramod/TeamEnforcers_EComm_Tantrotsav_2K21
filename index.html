@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title></title>
   </head>
   <body>
@@ -166,6 +167,50 @@
       </div>
       </div>
     </section>
+    <!-- New Arrivals Completed! -->
+    <section class="trends">;
+      <div class="product-info">
+        <h1>Top <span>Trends</span></h1>
+        <p>Suniye Ganna apne maan pasand brand ke headphones se!!</p>
+      </div>
 
-  </body>
+      <div class="swiper mySwiper">
+       <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/headphone1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/headphone2.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/headphone3.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/headphone1.jpg">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+     </div>
+    </section>
+
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+   var swiper = new Swiper(".mySwiper", {
+     effect: "coverflow",
+     grabCursor: true,
+     centeredSlides: true,
+     slidesPerView: "auto",
+     coverflowEffect: {
+       rotate: 50,
+       stretch: 0,
+       depth: 1200,
+       modifier: 1,
+       slideShadows: true,
+     },
+     pagination: {
+       el: ".swiper-pagination",
+     },
+   });
+  </script>
+</body>
 </html>

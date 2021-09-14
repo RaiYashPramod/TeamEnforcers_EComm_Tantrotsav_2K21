@@ -231,3 +231,32 @@ header{
   color: var(--primary);
   text-align: center;
 }
+.trends{
+  padding: 100px;
+  background-color: rgba(0,0,0,0.01);
+  /* text-align: center; */
+}
+.trends .product-info{
+  text-align: center;
+}
+.trends .swiper-mySwiper{
+  width: 100%;
+  height: 100%
+  padding: 50px;
+}
+
+.trends .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+.treands .swiper-slide img {
+  display: block;
+  width: 200%;
+  height: 200%;
+  padding: 0;
+  margin: 0;
+  /* align-self: center; */
+  align-items: center;
+}
