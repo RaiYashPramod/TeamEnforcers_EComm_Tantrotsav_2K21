@@ -154,7 +154,6 @@ header{
   background-position: top;
   position: relative;
 }
-
 .fstext{
   max-width: 500px;
   position: absolute;
@@ -181,4 +180,54 @@ header{
 }
 .latest-arrivals{
   /* color: white; */
+  padding: 50px 100px;
+  text-align: center;
+}
+.product-info h1{
+  color: var(--primary);
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.product-info h1 span{
+  color: var(--secondary);
+}
+.product-info p{
+  color: grey;
+  margin: 15px 0;
+}
+.card-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 4rem 0;
+  padding: 0.8rem;
+  position: relative;
+}
+.card i{
+  color: goldenrod;
+  margin-left: 10px 0;
+}
+.card button{
+  color: white;
+  background-color: var(--secondary);
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.card p{
+  margin-top: 10px;
+}
+.card img{
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.card:hover img, .card:hover h1{
+  width: 80%;
+  color: var(--primary);
+  text-align: center;
 }
