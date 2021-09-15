@@ -296,6 +296,9 @@ footer i{
     z-index: 2;
     background: white;
   }
+  .nav1 .left span{
+    display: none;
+  }
   .nav2{
     width: 100%;
     height: 80px;
