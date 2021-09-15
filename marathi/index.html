@@ -35,7 +35,7 @@
           <p>आपल्याला पाहिजे ते आमच्याकडे आहे</p>
         </div>
         <div class="right">
-          <i class="fa fa-map"></i> आमच्याशी संपर्क साधा
+          <i class="fa fa-map"></i><a href="../contact/contact.html">आमच्याशी संपर्क साधा</a>
         </div>
       </nav>
       <!-- nav 2 ends here -->
@@ -248,6 +248,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">वर</button>
     <footer>
       <div>
         <h1>युन <span>कार्ट</span></h1><br>
@@ -298,6 +299,27 @@
          sidenav.style.width = "0px";
        }
      }
+ </script>
+ <script>
+
+ mybutton = document.getElementById("myBtn");
+
+
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+   mybutton.style.display = "block";
+ } else {
+   mybutton.style.display = "none";
+ }
+ }
+
+ function topFunction() {
+ document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+ }
+
  </script>
 </body>
 </html>
